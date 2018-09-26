@@ -55,12 +55,13 @@ console.log("Zadanie 4: ", average(...mojeOcenyLiceum));
 
 //--------- Zad 5
 /*Podczas pracy nad projektem natknąłeś się na bardzo dziwną strukturę danych - [1, 4, 'Bolek', false, 'Wałęsa']. 
-Twoim zadaniem jest skorzystanie z destrukturyzacji w celu wyciągnięcia z tablicy zmiennych firstname oraz lastname. */
+Twoim zadaniem jest skorzystanie z destrukturyzacji w celu wyciągnięcia z tablicy zmiennych firstname oraz lastname.. */
 
 const data = [1, 4, 'Bolek', false, 'Wałęsa'];
 
 const [ , , firstname, , lastname] = data;
 console.log("Zadanie 5: ", firstname, lastname);
+
 
 
 
