@@ -10,6 +10,7 @@ const swiecie = "World!";
 
 const witajSwiecie = `${witaj} ${swiecie}`;
 console.log("zadanie 1: ", witajSwiecie);
+console.log("zadanie 1a: ", `${witaj} ${swiecie}`);
 
 /*Stwórz funkcję multiply, która ma zwracać wynik działania operacji mnożenia dwóch wartości a i b. Przykładowo:
 
@@ -22,9 +23,7 @@ Chcemy, aby wynik takiego wywołania był również prawidłowy -
 możesz założyć, że jeśli użytkownik nie poda któregoś z parametrów, ma on zostać zastąpiony 1.
  Nie wolno korzystać z instrukcji warunkowych! Funkcję stwórz za pomocą arrow function.*/
 
-const multiply = (a = 1, b = 1) => {
-     return a * b;
-};
+const multiply = (a = 1, b = 1) => { return a * b };
 
 console.log("Zadanie 2: ", multiply(5));
 
@@ -38,11 +37,11 @@ average(1, 3, 6, 6) // 4
 Skorzystaj z rest parameters! Funkcję stwórz za pomocą arrow function. */
 
 const average = (...params) => {
-    let avg = params.reduce((a,b) => parseInt(a) + parseInt(b) ) / params.length;    
+    const avg = params.reduce((a,b) => parseInt(a) + parseInt(b) ) / params.length;    
     return avg.toFixed([1]);
 }
 
-console.log("Zadanie 3: ", average("82", 6 ,2));
+console.log("Zadanie 3: ", average("82", 6, 2 ));
 
 //----- Zad 4
 /*Stwórz tablicę z ocenami const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1], 

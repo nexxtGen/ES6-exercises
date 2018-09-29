@@ -11,6 +11,7 @@ var swiecie = "World!";
 
 var witajSwiecie = witaj + " " + swiecie;
 console.log("zadanie 1: ", witajSwiecie);
+console.log("zadanie 1a: ", witaj + " " + swiecie);
 
 /*Stwórz funkcję multiply, która ma zwracać wynik działania operacji mnożenia dwóch wartości a i b. Przykładowo:
 
@@ -26,7 +27,6 @@ możesz założyć, że jeśli użytkownik nie poda któregoś z parametrów, ma
 var multiply = function multiply() {
   var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
   var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-
   return a * b;
 };
 
@@ -65,7 +65,7 @@ console.log("Zadanie 4: ", average.apply(undefined, mojeOcenyLiceum));
 
 //--------- Zad 5
 /*Podczas pracy nad projektem natknąłeś się na bardzo dziwną strukturę danych - [1, 4, 'Bolek', false, 'Wałęsa']. 
-Twoim zadaniem jest skorzystanie z destrukturyzacji w celu wyciągnięcia z tablicy zmiennych firstname oraz lastname. */
+Twoim zadaniem jest skorzystanie z destrukturyzacji w celu wyciągnięcia z tablicy zmiennych firstname oraz lastname.. */
 
 var data = [1, 4, 'Bolek', false, 'Wałęsa'];
 
